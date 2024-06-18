@@ -142,6 +142,49 @@ fiveNumbers([1, 2, 3, 4, 5]);
 //- Crea una función que reciba un array con 5 letras y que imprima las 5 letras unidas en una sola palabra
 
 const fiveLetters = (array) => {
-  console, log(`${array[0]}${array[1]}${array[2]}${array[3]}${array[4]}`);
+  console.log(`${array[0]}${array[1]}${array[2]}${array[3]}${array[4]}`);
 };
 fiveLetters(["p", "a", "l", "a", "s"]);
+
+//- Crea una función llamada longestWordArray que reciba un array con 3 palabras y devuelva la palabra más larga del array.
+
+const longestWordArray = (array) => {
+  if (array[0].length > array[1].length && array[0].length > array[2].length) {
+    return array[0];
+  }
+  if (array[1].length > array[0].length && array[1].length > array[2].length) {
+    return array[1];
+  }
+  if (array[2].length > array[1].length && array[2].length > array[0].length) {
+    return array[2];
+  }
+};
+console.log(longestWordArray(["palabra", "casa", "mueblessss"]));
+
+//- Crea una función que reciba un array con 3 números y un array con 3 letras e imprima los números y las letras intercaladas, por ejemplo, si recibe ([1,2,3],['a','b','c']) deberá imprimir 1,a,2,b,3,c
+
+const twoArray = (arrayA, arrayB) => {
+  const newArray = [];
+  newArray.push(
+    arrayA[0],
+    arrayB[0],
+    arrayA[1],
+    arrayB[1],
+    arrayA[2],
+    arrayB[2]
+  );
+  console.log(newArray);
+};
+twoArray([1, 2, 3], ["a", "b", "c"]);
+
+//- Crea una función que reciba un array con un número impar de elementos e imprima por consola el valor de la posición central, por ejemplo, si recibe [1,2,3,4,5] deberá imprimir 3, pero si recibe [1,2,3] deberá imprimir 2, si el número de elementos no es impar deberá imprimir "el array no es válido"
+
+//- Crea una función que reciba una palabra de 5 letras e imprima sólo las vocales, por ejemplo, si recibe "hola" deberá imprimir "oa"
+
+const onlyVowels = (word) => {
+  for (let i = 0; i < word.length; i++) {
+    let vowels = "";
+    if (word) {
+    }
+  }
+};
